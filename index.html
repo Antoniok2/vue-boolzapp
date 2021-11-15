@@ -65,16 +65,16 @@
                     </div>
                     <!-- QUI TROVO CHAT -->
                     <div class="user_chat">
-                        <div class="open_chat">
+                        <div v-for="contact in contacts" class="open_chat">
                             <div>
-                                <img src="img/avatar_1.jpg" alt="avatar_1">
+                                <img :src="contact.avatar" alt="avatar">
                                 <div>  
-                                    <h3>Michele</h3>
+                                    <h3>{{contact.name}}</h3>
                                     <span>Tutto fatto!...</span>
                                 </div>
                             </div>
                             <div class="time_access">
-                                <span>10/01/2020 16:15:22</span>
+                                <span>{{contact.date}}</span>
                            </div>                    
                        </div>
                     </div>
@@ -96,6 +96,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="write_text">
+                        <div>
+                            <div class="emoj_barratext">
+                                <span><i class="far fa-smile"></i></span>
+                                <input type="text" placeholder="Scrivi un messaggio">
+                            </div>
+                            <div class="microfono">
+                                <span><i class="fas fa-microphone"></i></span>
+                            </div>
+                        </div>  
                     </div>
                 </div>
             </div>
