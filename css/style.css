@@ -16,6 +16,7 @@
     background-color: #029588;
 }
 
+/* QUI PERSONALIZZAZIONE STRUTTURA FINESTRA WHATSAP */
 .whatsapp_window {
     position: absolute;
     top: 8%;
@@ -24,6 +25,7 @@
     height: 80vh;
 }
 
+/* QUI PARTE LA NAVBAR IN ALTO */
 #navbars {
     display: flex;
     justify-content: flex-start;
@@ -33,15 +35,65 @@
 }
 
 .left_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 30%;
-    background-color: red;
+    background-color: white;
+    border-right: 1px solid grey;
+}
+
+.left_navbar .user {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.left_navbar .user> img {
+    width: 15%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.left_navbar .option {
+    display: flex;
+    margin: 0 10px;
+}
+
+.left_navbar .option> span {
+    margin: 0 10px;
+    color: grey;
+    cursor: pointer;
 }
 
 .right_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 70%;
-    background-color: turquoise;
+    background-color: white;
 }
 
+.right_navbar .destinatario {
+    display: flex;
+}
+
+.right_navbar .destinatario> .destinatary_info {
+    margin: auto 0;
+}
+
+.right_navbar .destinatario> img {
+    width: 7%;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.right_navbar .option_chat> span {
+    margin: 0 10px;
+    color: grey;
+}
+
+/* QUI PARTE LA PARTE RELATIVA A CHAT E CONVERSAZIONE */
 #chat_conversation {
     display: flex;
     height: 90%;
