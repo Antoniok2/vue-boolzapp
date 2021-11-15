@@ -172,6 +172,47 @@
 .conversation {
     width: 70%;
     height: 100%;
-    background-color: violet;
+    border: 1px solid grey;
+    background-image: url("../img/background_chat.jpg");
 }
+
+.conversation img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.conversation .conversazione_aperta .mittente_chat {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+.conversation .conversazione_aperta .mittente_chat div> h3 {
+    border: 1px solid black;
+    width: 350px;
+    margin: 20px 50px;
+    padding: 10px;
+    background-color: white;
+}
+
+.conversation .conversazione_aperta .destinatario_chat {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.conversation .conversazione_aperta .destinatario_chat div> h3 {
+    border: 1px solid black;
+    width: 350px;
+    margin: 20px 50px;
+    padding: 10px;
+    background-color: rgb(168, 255, 168);
+}
+
+
+
+
+
+
 
