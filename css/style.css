@@ -165,10 +165,6 @@
     border-radius: 25px;
 }
 
-
-
-
-
 .conversation {
     width: 70%;
     height: 100%;
@@ -186,8 +182,6 @@
     display: flex;
     justify-content: flex-start;
 }
-
-
 
 .conversation .conversazione_aperta .mittente_chat div> h3 {
     border: 1px solid black;
