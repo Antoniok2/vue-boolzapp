@@ -102,8 +102,72 @@
 .chat {
     width: 30%;
     height: 100%;
-    background-color: green;
+    border: 1px solid grey;
 }
+
+#chat_conversation .chat> .active_notify {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 12%;
+    background-color: #8edafc;
+}
+
+#chat_conversation .chat .active_notify> img {
+    width: 12%;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+#chat_conversation .chat> .chat_search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 8%;
+    background-color: white;
+    padding: 0 10px;
+}
+
+#chat_conversation .chat .chat_search> input {
+    margin: 0 10px;
+    width: 80%;
+    height: 20px;
+    border: 1px solid white;
+}
+
+#chat_conversation .chat> .user_chat {
+    width: 100%;
+    height: 80%;
+}
+
+#chat_conversation .chat .user_chat> .open_chat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #e9ebeb;
+}
+
+#chat_conversation .chat .user_chat .open_chat> .chat_info {
+    display: flex;
+}
+
+#chat_conversation .chat .user_chat .open_chat> div {
+    display: flex;
+    margin: 0 10px;
+}
+
+#chat_conversation .chat .user_chat .open_chat div> img {
+    width: 12%;
+    border-radius: 25px;
+}
+
+
+
+
 
 .conversation {
     width: 70%;
