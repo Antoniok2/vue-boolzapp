@@ -81,19 +81,11 @@
                 </div>
                 <!-- QUI TROVO LA CONVERSAZIONE APERTA -->
                 <div class="conversation">
-                    <div class="conversazione_aperta visible">
+                    <div class="conversazione_aperta visible" v-for="item in contacts[activeClass].messages">
                         <!-- QUI LE RISPOSTE DELL'UTENTE -->
-                        <div class="destinatario_chat">
+                        <div :class="item.status">
                             <div>
-                                <h3>Hai portato il cane fuori?</h3>
-                            </div>
-                        </div>
-                        <!-- QUI LE RISPOSTE DEL DESTINATARIO -->
-                        <div>
-                            <div class="mittente_chat">
-                                <div>
-                                    <h3>Sisi</h3>
-                                </div>                       
+                                <h3>{{item.text}}</h3>
                             </div>
                         </div>
                     </div>
