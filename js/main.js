@@ -87,9 +87,13 @@ var boolzapp = new Vue({
                             ],
             },
         ]
+    },
+    methods: {
+        openChat: function(){
+            this.activeClass++
+        }
     }
-
-})
+});
 
 
 
