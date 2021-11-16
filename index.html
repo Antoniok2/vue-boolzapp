@@ -65,7 +65,7 @@
                     </div>
                     <!-- QUI TROVO CHAT -->
                     <div class="user_chat">
-                        <div v-for="contact, i in contacts" :key="i"  class="open_chat" :class="i === activeClass ? 'active' : '' " @click="openChat">
+                        <div v-for="contact, i in contacts" :key="i"  class="open_chat" :class="i === activeClass ? 'active' : '' " @click="openChat(i)">
                             <div>
                                 <img :src="contact.avatar" alt="avatar">
                                 <div>  

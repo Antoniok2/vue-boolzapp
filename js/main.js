@@ -89,8 +89,8 @@ var boolzapp = new Vue({
         ]
     },
     methods: {
-        openChat: function(){
-            this.activeClass++
+        openChat: function(i){
+            this.activeClass = i
         }
     }
 });
