@@ -148,6 +148,13 @@
     align-items: center;
     width: 100%;
     height: 15%;
+}
+
+#chat_conversation .chat .user_chat> .open_chat:hover {
+    background-color: rgb(255, 233, 205);
+}
+
+.active {
     background-color: #e9ebeb;
 }
 
@@ -176,6 +183,14 @@
 .conversation img {
     width: 100%;
     height: 100%;
+}
+
+.conversation .conversazione_aperta {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible !important
 }
 
 

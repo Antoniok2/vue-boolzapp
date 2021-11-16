@@ -1,6 +1,7 @@
 var boolzapp = new Vue({
     el: '#container',
     data: {
+        activeClass: 0,
         contacts: [
             {
                     name: 'Michele',
