@@ -201,6 +201,7 @@
 
 .conversation .conversazione_aperta .mittente_chat div> h3 {
     border: 1px solid black;
+    border-radius: 10px;
     width: 350px;
     margin: 20px 50px;
     padding: 10px;
@@ -218,6 +219,7 @@
     margin: 20px 50px;
     padding: 10px;
     background-color: #d5f9ba;
+    border-radius: 10px;
 }
 
 .conversation .write_text {
@@ -225,14 +227,41 @@
     bottom: 0;
     width: 100%;
     height: 50px;
-    background-color: yellow;
+    background-color: white;
+    border-top: 1px solid grey;
     z-index: 999;
 }
 
 .conversation .write_text> div {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
+
+.emoj_barratext {
+    width: 90%;
+}
+
+.microfono {
+    width: 10%;
+    text-align: center;
+    color: grey;
+}
+
+.emoj_barratext span {
+    margin: 0 15px;
+    font-size: 20px;
+    color: grey;
+}
+
+.emoj_barratext input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+
+}
+
 
 
 
