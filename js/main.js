@@ -2,14 +2,16 @@ var boolzapp = new Vue({
     el: '#container',
     data: {
         activeClass: 0,
-            newMessages:[
-            {
-                date: 'accesso alle',
-                text: '',
-                status: 'destinatario_chat'
-            }   
-            ],
-               
+        newMessage: {
+            date: '10/01/2020 16:15:22',
+            text: '',
+            status: 'destinatario_chat'
+        }, 
+        newMessageAuto: {
+            date: '10/01/2020 16:26:22',
+            text: 'Ok!',
+            status: 'mittente_chat'
+        },   
         contacts: [
             {
                     name: 'Michele',
@@ -101,7 +103,15 @@ var boolzapp = new Vue({
             this.activeClass = i
         },
         addMex: function(){
-            this.contacts[this.activeClass].messages.push(this.newMessages[this.activeClass].text)
+            this.contacts[this.activeClass].messages.push(this.newMessage);
+            this.newMessage = {
+                date: '10/01/2020 16:25:22',
+                text: '',
+                status: 'destinatario_chat'
+            }, 
+            setTimeout(() => {
+                this.contacts[this.activeClass].messages.push(this.newMessageAuto)            
+            }, 3000);
         }
     }
 });
