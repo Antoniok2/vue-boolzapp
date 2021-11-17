@@ -2,8 +2,6 @@ var boolzapp = new Vue({
     el: '#container',
     data: {
         activeClass: 0,
-        newContact: [
-            {
             newMessages:[
             {
                 date: 'accesso alle',
@@ -11,9 +9,7 @@ var boolzapp = new Vue({
                 status: 'destinatario_chat'
             }   
             ],
-            
-        },
-        ],
+               
         contacts: [
             {
                     name: 'Michele',
@@ -104,9 +100,8 @@ var boolzapp = new Vue({
         openChat: function(i){
             this.activeClass = i
         },
-        addMex: function(i){
-            this.activeClass = i
-            this.contacts[this.activeClass].messages.push(this.newContact[this.activeClass].newMessages)
+        addMex: function(){
+            this.contacts[this.activeClass].messages.push(this.newMessages[this.activeClass].text)
         }
     }
 });

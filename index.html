@@ -91,9 +91,9 @@
                     </div>
                     <div class="write_text">
                         <div>
-                            <div class="emoj_barratext">
+                            <div class="emoj_barratext" >
                                 <span><i class="far fa-smile"></i></span>
-                                <input @keydown.enter="addMex(i)" v-model="newContact[0].newMessages.text" type="text" placeholder="Scrivi un messaggio">
+                                <input @keydown.enter="addMex" v-model="newMessages.text" type="text" placeholder="Scrivi un messaggio">
                             </div>
                             <div class="microfono">
                                 <span><i class="fas fa-microphone"></i></span>
