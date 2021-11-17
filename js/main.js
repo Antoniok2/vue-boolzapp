@@ -3,12 +3,12 @@ var boolzapp = new Vue({
     data: {
         activeClass: 0,
         newMessage: {
-            date: '10/01/2020 16:15:22',
+            date: new Date().toLocaleString(),
             text: '',
             status: 'destinatario_chat'
         }, 
         newMessageAuto: {
-            date: '10/01/2020 16:26:22',
+            date: new Date().toLocaleString(),
             text: 'Ok!',
             status: 'mittente_chat'
         },   
@@ -105,7 +105,7 @@ var boolzapp = new Vue({
         addMex: function(){
             this.contacts[this.activeClass].messages.push(this.newMessage);
             this.newMessage = {
-                date: '10/01/2020 16:25:22',
+                date: new Date().toLocaleString(),
                 text: '',
                 status: 'destinatario_chat'
             }, 

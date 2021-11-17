@@ -35,7 +35,7 @@
                         <img :src="contacts[activeClass].avatar" alt="avatar_1">
                         <div class="destinatary_info" >
                             <h3>{{contacts[activeClass].name}}</h3>
-                            <span>ultimo accesso alle 10/01/2020 16:15:22</span>
+                            <span>ultimo accesso alle {{contacts[activeClass].messages[contacts[activeClass].messages.length-1].date}}</span>
                         </div>                     
                     </div>
                     <div class="option_chat">
