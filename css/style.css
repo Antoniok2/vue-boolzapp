@@ -180,6 +180,8 @@
     background-image: url("../img/background_chat.jpg");
 }
 
+
+
 .conversation img {
     width: 100%;
     height: 100%;
@@ -187,10 +189,12 @@
 
 .conversation .conversazione_aperta {
     visibility: hidden;
+    height: 92%;
 }
 
 .visible {
-    visibility: visible !important
+    visibility: visible !important;
+    overflow-y: scroll;
 }
 
 

@@ -111,7 +111,7 @@ var boolzapp = new Vue({
             }, 
             setTimeout(() => {
                 this.contacts[this.activeClass].messages.push(this.newMessageAuto)            
-            }, 3000);
+            }, 1000);
         }
     }
 });
