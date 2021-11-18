@@ -35,7 +35,7 @@
                         <img :src="contacts[activeClass].avatar" alt="avatar_1">
                         <div class="destinatary_info" >
                             <h3>{{contacts[activeClass].name}}</h3>
-                            <span>ultimo accesso alle {{contacts[activeClass].messages[contacts[activeClass].messages.length-1].date}}</span>
+                            <span>Ultimo accesso alle {{contacts[activeClass].messages[contacts[activeClass].messages.length-1].date}}</span>
                         </div>                     
                     </div>
                     <div class="option_chat">
@@ -61,7 +61,7 @@
                     <!-- QUI TROVO INPUT RICERCA CHAT -->
                     <div class="chat_search">
                         <span><i class="fas fa-search"></i></span>
-                        <input type="text" placeholder="cerca o inizia nuova chat">
+                        <input type="text" placeholder="cerca o inizia nuova chat" @keyup.enter="search" v-model="contacts[activeClass].name">
                     </div>
                     <!-- QUI TROVO CHAT -->
                     <div class="user_chat">

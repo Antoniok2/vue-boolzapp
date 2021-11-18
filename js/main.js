@@ -99,9 +99,12 @@ var boolzapp = new Vue({
         ]
     },
     methods: {
+        // USO QUESTA FUNZIONE PER APRIRE AL CLICK LA CHAT
         openChat: function(i){
             this.activeClass = i
         },
+
+        // IN QUESTO MODO POSSO SCRIVERE UN MEX NELLA CHAT APERTA
         addMex: function(){
             this.contacts[this.activeClass].messages.push(this.newMessage);
             this.newMessage = {
@@ -109,9 +112,13 @@ var boolzapp = new Vue({
                 text: '',
                 status: 'destinatario_chat'
             }, 
+            // QUI MI ASPETTO UNA RISPOSTA AUTOMATICA DOPO UN SECONDO DAL SISTEMA
             setTimeout(() => {
                 this.contacts[this.activeClass].messages.push(this.newMessageAuto)            
             }, 1000);
+        },
+        search: function(){
+            this.contacts[this.activeClass].name.toLowerCase().include(contacts.toLowerCase());
         }
     }
 });
