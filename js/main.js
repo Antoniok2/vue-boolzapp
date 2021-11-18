@@ -2,6 +2,7 @@ var boolzapp = new Vue({
     el: '#container',
     data: {
         activeClass: 0,
+        ricercaContatti: "",
         newMessage: {
             date: new Date().toLocaleString(),
             text: '',
@@ -117,9 +118,7 @@ var boolzapp = new Vue({
                 this.contacts[this.activeClass].messages.push(this.newMessageAuto)            
             }, 1000);
         },
-        search: function(){
-            this.contacts[this.activeClass].name.toLowerCase().include(contacts.toLowerCase());
-        }
+        
     }
 });
 

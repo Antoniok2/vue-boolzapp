@@ -61,11 +61,11 @@
                     <!-- QUI TROVO INPUT RICERCA CHAT -->
                     <div class="chat_search">
                         <span><i class="fas fa-search"></i></span>
-                        <input type="text" placeholder="cerca o inizia nuova chat" @keyup.enter="search" v-model="contacts[activeClass].name">
+                        <input type="text" placeholder="cerca o inizia nuova chat" v-model="ricercaContatti">
                     </div>
                     <!-- QUI TROVO CHAT -->
                     <div class="user_chat">
-                        <div v-for="contact, i in contacts" :key="i"  class="open_chat" :class="i === activeClass ? 'active' : '' " @click="openChat(i)">
+                        <div v-for="contact, i in contacts" :key="i"  class="open_chat" :class="i === activeClass ? 'active' : '' " @click="openChat(i)" v-if="contact.name.toLowerCase().includes(ricercaContatti.toLowerCase())">
                             <div>
                                 <img :src="contact.avatar" alt="avatar">
                                 <div>  
